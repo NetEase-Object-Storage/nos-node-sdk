@@ -36,7 +36,7 @@ NOS Node.js SDK 实现了 NOS 对象操作接口，基于此 SDK 能方便快速
 ## QuickStart
 
 ```typescript
-import { NosClient } from '@xgheaven/nos-node-sdk'
+import { NosClient } from '@nos-sdk/nos-node-sdk'
 
 const client = new NosClient({
   accessKey: 'your-access-key',

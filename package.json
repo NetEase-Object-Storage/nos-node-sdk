@@ -1,5 +1,5 @@
 {
-  "name": "@netease-object-storage/nos-node-sdk",
+  "name": "@nos-sdk/nos-node-sdk",
   "version": "0.2.6",
   "author": {
     "name": "XGHeaven<xgheaven@gmail.com>"
