@@ -1,6 +1,6 @@
 {
-  "name": "@xgheaven/nos-node-sdk",
-  "version": "0.2.5",
+  "name": "@netease-object-storage/nos-node-sdk",
+  "version": "0.2.6",
   "author": {
     "name": "XGHeaven<xgheaven@gmail.com>"
   },
@@ -46,7 +46,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/XGHeaven/nos-node-sdk"
+    "url": "https://github.com/NetEase-Object-Storage/nos-node-sdk"
   },
   "scripts": {
     "test": "jest -i",

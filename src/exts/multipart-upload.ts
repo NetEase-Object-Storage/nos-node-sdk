@@ -77,9 +77,13 @@ export class NosClientMultipartUploadExt extends NosBaseClient {
 
     const resp = await this.request('put', headers, resource, params.body)
 
+    let eTag = resp.headers.get('etag') as string
+    if (eTag.charAt(0) === '\"' && eTag.charAt(eTag.length - 1) === '\"') {
+      eTag = eTag.slice(1, -1)
+    }
     return {
       partNumber: params.partNumber,
-      eTag: (resp.headers.get('etag') as string).slice(1, -1),
+      eTag: eTag,
       size: params.body.length,
       lastModified: parse(resp.headers.get('date') as string),
     }
